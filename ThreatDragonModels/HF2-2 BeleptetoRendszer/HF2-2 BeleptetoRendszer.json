@@ -65,9 +65,9 @@
               "isTrustBoundary": true,
               "hasOpenThreats": false,
               "crossingFlows": [
-                "b17ba87b-618d-4613-83f2-0d898e798c4a",
                 "a24d297d-4f2f-404e-aafa-4f7bdb5ba0d5",
-                "9c9dda72-c9cb-420a-93e6-54b27b5f5f00"
+                "9c9dda72-c9cb-420a-93e6-54b27b5f5f00",
+                "b17ba87b-618d-4613-83f2-0d898e798c4a"
               ],
               "containedElements": [
                 "51da946b-3e97-467b-8d1b-81f19259dc8f",
@@ -875,56 +875,6 @@
               "protocol": "",
               "threats": [],
               "trustBoundaryIds": [
-                "9bbbb727-691d-4f73-90fc-83ae8b6b641e",
-                "d8e091e0-9b0c-44d0-8d27-309a705ef50c"
-              ]
-            },
-            "labels": [
-              "Data Flow"
-            ],
-            "id": "b17ba87b-618d-4613-83f2-0d898e798c4a",
-            "source": {
-              "cell": "e4dabdea-8858-4523-87fa-a16b241a3729",
-              "port": "293c7cef-413d-48c9-a053-c1459ff3d87b"
-            },
-            "target": {
-              "cell": "24cb6bc3-5564-493f-aa7a-201728320ade",
-              "port": "4697ea38-3375-414f-a82f-1efbf1ac623c"
-            },
-            "vertices": []
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Data Flow",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": [
                 "d8e091e0-9b0c-44d0-8d27-309a705ef50c"
               ]
             },
@@ -1246,6 +1196,76 @@
             "vertices": []
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "b24aee0b-1d7a-4348-81f1-c4c4af4761fc",
+                  "title": "Klónozott kártya",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Tampering",
+                  "description": " A támadó klónozott kártyával próbál belépni",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 1,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": [
+                "9bbbb727-691d-4f73-90fc-83ae8b6b641e",
+                "d8e091e0-9b0c-44d0-8d27-309a705ef50c"
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "Data Flow"
+            ],
+            "id": "b17ba87b-618d-4613-83f2-0d898e798c4a",
+            "source": {
+              "cell": "e4dabdea-8858-4523-87fa-a16b241a3729",
+              "port": "293c7cef-413d-48c9-a053-c1459ff3d87b"
+            },
+            "target": {
+              "cell": "24cb6bc3-5564-493f-aa7a-201728320ade",
+              "port": "4697ea38-3375-414f-a82f-1efbf1ac623c"
+            },
+            "vertices": []
+          },
+          {
             "position": {
               "x": 660,
               "y": 200
@@ -1371,6 +1391,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "Honfi, Vid Sebestyén",
-    "threatTop": 0
+    "threatTop": 1
   }
 }
