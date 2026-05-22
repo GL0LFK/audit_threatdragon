@@ -1,0 +1,16 @@
+{
+  "version": "2.6.2",
+  "summary": {
+    "title": "HF2-2 BeleptetoRendszer",
+    "owner": "Drobina Zsolt",
+    "description": "• Adott egy beléptető rendszer, amely egy azonosító kártyáról leolvasott adatok alapján nyitja a zárt ajtót, vagy tagadja meg a belépést.\n• A kártyaolvasó a leolvasott adatokat egy szerverhez továbbítja, mely -az adatbázisban tárolt adatok alapján- ad utasítást a zár nyitására.\n• A kártyákat, és a jogosultságokat az adminisztrátor, egy web alkalmazáson keresztül tudja konfigurálni.",
+    "id": 0
+  },
+  "detail": {
+    "contributors": [],
+    "diagrams": [],
+    "diagramTop": 0,
+    "reviewer": "Honfi, Vid Sebestyén",
+    "threatTop": 0
+  }
+}
