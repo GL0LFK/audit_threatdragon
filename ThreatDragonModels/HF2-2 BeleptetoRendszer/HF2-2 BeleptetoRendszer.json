@@ -28,8 +28,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "9bbbb727-691d-4f73-90fc-83ae8b6b641e",
             "zIndex": -1,
+            "id": "9bbbb727-691d-4f73-90fc-83ae8b6b641e",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "Trust Boundary",
@@ -56,8 +56,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "d8e091e0-9b0c-44d0-8d27-309a705ef50c",
             "zIndex": -1,
+            "id": "d8e091e0-9b0c-44d0-8d27-309a705ef50c",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "Trust Boundary",
@@ -97,6 +97,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -180,7 +181,6 @@
               ]
             },
             "id": "a160be04-7c8a-4b6d-8d7e-c0417e8fe683",
-            "zIndex": 1,
             "data": {
               "type": "tm.Actor",
               "name": "Kártyabirtokos",
@@ -217,6 +217,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 3,
             "ports": {
               "groups": {
                 "top": {
@@ -300,7 +301,6 @@
               ]
             },
             "id": "51da946b-3e97-467b-8d1b-81f19259dc8f",
-            "zIndex": 3,
             "data": {
               "type": "tm.Store",
               "name": "DB",
@@ -338,6 +338,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 4,
             "ports": {
               "groups": {
                 "top": {
@@ -421,7 +422,6 @@
               ]
             },
             "id": "e4dabdea-8858-4523-87fa-a16b241a3729",
-            "zIndex": 4,
             "data": {
               "type": "tm.Process",
               "name": "Kártya-\nolvasó",
@@ -458,6 +458,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 5,
             "ports": {
               "groups": {
                 "top": {
@@ -541,7 +542,6 @@
               ]
             },
             "id": "7e61273c-68b1-48c7-9aae-87b653149885",
-            "zIndex": 5,
             "data": {
               "type": "tm.Process",
               "name": "Admin\nPortál",
@@ -578,6 +578,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 6,
             "ports": {
               "groups": {
                 "top": {
@@ -661,7 +662,6 @@
               ]
             },
             "id": "10980be1-f286-4c38-bb78-0ff3fb3c24d3",
-            "zIndex": 6,
             "data": {
               "type": "tm.Actor",
               "name": "Admin",
@@ -695,6 +695,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 7,
             "ports": {
               "groups": {
                 "top": {
@@ -778,7 +779,6 @@
               ]
             },
             "id": "b3aab703-45ed-4745-973b-04b397a19f6b",
-            "zIndex": 7,
             "data": {
               "type": "tm.Process",
               "name": "Ajtózár",
@@ -1083,9 +1083,28 @@
               "cell": "51da946b-3e97-467b-8d1b-81f19259dc8f",
               "port": "c4ca1da7-fb94-4090-a28b-b2646d43875b"
             },
-            "vertices": [],
             "tools": {
               "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
                 "boundary",
                 "button-remove",
                 "vertices",
@@ -1223,7 +1242,8 @@
                 "target-arrowhead"
               ],
               "name": null
-            }
+            },
+            "vertices": []
           },
           {
             "position": {
@@ -1246,6 +1266,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 11,
             "ports": {
               "groups": {
                 "top": {
@@ -1329,7 +1350,6 @@
               ]
             },
             "id": "24cb6bc3-5564-493f-aa7a-201728320ade",
-            "zIndex": 11,
             "data": {
               "type": "tm.Process",
               "name": "Szerver",
